@@ -1270,7 +1270,7 @@ static void AuditPrint( char * msg )
 		auditIgnore = FALSE;
 	}
 	fprintf(auditFile, "# " );
-	fprintf(auditFile, msg );
+	fprintf(auditFile, "%s", msg );
 	if (auditIgnore)
 		return;
 	NoticeMessage( MSG_AUDIT_PRINT_MSG, _("Ok"), NULL, msg );

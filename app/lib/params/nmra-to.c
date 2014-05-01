@@ -188,7 +188,7 @@ int main ( int argc, char * argv[] )
 	if( argc != 3 )
 	{
 		fprintf( stderr, 
-			     "Usage: %1 nmraturnoutdata paramfile\n\n"
+			     "Usage: %s nmraturnoutdata paramfile\n\n"
 				 "The data file is read line by line and turnout defimitions\n"
 				 "are created in the param file.\n\n",
 				 argv[ 0 ] );

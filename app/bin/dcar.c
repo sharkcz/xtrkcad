@@ -4652,7 +4652,7 @@ static void CsvFormatString(
 		}
 		fputc( '"', f );
 	}
-	fprintf( f, sep );
+	fprintf( f, "%s", sep );
 }
 
 
@@ -4663,7 +4663,7 @@ static void CsvFormatLong(
 {
 	if ( val != 0 )
 		fprintf( f, "%ld", val );
-	fprintf( f, sep );
+	fprintf( f, "%s", sep );
 }
 
 
@@ -4675,7 +4675,7 @@ static void CsvFormatFloat(
 {
 	if ( val != 0.0 )
 		fprintf( f, "%0.*f", digits, val );
-	fprintf( f, sep );
+	fprintf( f, "%s", sep );
 }
 
 
